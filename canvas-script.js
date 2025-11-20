@@ -9,5 +9,5 @@ ctx.fillStyle = "red";
 
 // Draw a filled rectangle:
 // fillRect(x, y, width, height) 
-// (0, 0) is the top-left corner of the canvas
-ctx.fillRect(250, 60, 500, 350); 
+// Dimensions: (250, 60) is the top-left corner, width 500, height 350
+ctx.fillRect(250, 60, 500, 350);
