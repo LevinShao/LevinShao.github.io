@@ -4,7 +4,7 @@
 */
 .flex-container {
     display: flex;          /* Enables Flexbox */
-    gap: 10px;              /* Adds 10-pixel spacing between boxes */
+    gap: 20px;              /* Adds 20-pixel spacing between boxes */
     padding: 20px;          /* Adds padding around the container */
     margin: 0 10px;
 }
