@@ -24,13 +24,3 @@
     border-radius: 10px;              /* Rounded corners */
     border: 2px solid #0080ff;      /* Blue border 2 pixels wide */
 }
-
-/* 
-   This makes the boxes stack vertically on very small screens (<600px)
-   Flexbox makes this easy since all you need to do is to just change the direction from row to column
-*/
-@media (max-width: 600px) {
-    .flex-container {
-        flex-direction: column;
-    }
-}
