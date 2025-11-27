@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Simple Form</title>
-</head>
-<body>
-    <h2>Web Signup Page</h2>
-    <form action="/submit_form" method="POST">
-        <!-- Text input field for Name -->
-        <label for="user_name">Name:</label>
-        <input type="text" id="user_name" name="user_name">
-        <br><br>
-
-        <!-- Password input field (type="password" for security) -->
-        <label for="user_password">Password:</label>
-        <input type="password" id="user_password" name="user_password">
-        <br><br>
-
-        <!-- Submit button -->
-        <button type="submit">Submit</button>
-    </form>
-</body>
+<html lang="en-AU">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>12ASE AT1 Login Website</title>
+        <link rel="stylesheet" href="styled.css">
+    </head>
+    <body>
+        <!-- Navigation Section -->
+        <div class="grid-container">
+            <div class="item">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">index</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <!-- Heading Section -->
+            <div class="item2">
+                <h1 id="userLogin">Welcome</h1>
+            </div>
+        <!-- Content Section -->
+            <div class="item3">
+                <p>Username<br>
+                    <input id="userInput">
+                    <br></br>
+                    Email Address</br>
+                    <input id="userEmail">
+                    <br></br>
+                    Date Of Birth<br>
+                    <input id="userDOB">
+                    <br></br>
+                    Password</br>
+                    <input id="userPassword">
+                </p>
+                <button id="userSubmit">Login</button>
+                <script src="function.js"></script>
+            </div>
+        </div>
+    </body>
 </html>

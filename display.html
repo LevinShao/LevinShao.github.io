@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Details</title>
+</head>
+<body>
+    <h2>Registration Successful!</h2>
+    <p>Here is the information you entered:</p>
+    <ul id="detailsList">
+        <!-- Details will be inserted here by JavaScript -->
+    </ul>
+
+    <script>
+        window.onload = function() {
+            const data = localStorage.getItem('registrationData');
+            if (data) {
+                const userData = JSON.parse(data);
+                const list = document.getElementById('detailsList');
+
+                // Displaying the data
+                const nameItem = document.createElement('li');
+                nameItem.textContent = `Name: ${userData.name}`;
+                list.appendChild(nameItem);
+
+                const emailItem = document.createElement('li');
+                emailItem.textContent = `Email: ${userData.email}`;
+                list.appendChild(emailItem);
+
+                const dobItem = document.createElement('li');
+                dobItem.textContent = `Date of Birth: ${userData.dob}`;
+                list.appendChild(dobItem);
+
+                // Clear the data after display if desired for security (optional)
+                // localStorage.removeItem('registrationData');
+            } else {
+                document.body.innerHTML = '<p>No registration data found.</p>';
+            }
+        };
+    </script>
+</body>
+</html>
